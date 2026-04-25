@@ -1,0 +1,84 @@
+/* Estilos generales para centrar todo en la pantalla */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f2f5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Contenedor principal */
+.contenedor {
+    text-align: center;
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+/* Estilo del número (el que cambia de color con JS) */
+#numero {
+    display: block;
+    font-size: 5rem;
+    font-weight: bold;
+    margin: 20px 0;
+    transition: all 0.3s ease; /* Para que el cambio de color sea suave */
+}
+
+/* Estilo base para todos los botones */
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    transition: transform 0.2s, background-color 0.2s;
+    font-weight: 600;
+}
+
+button:active {
+    transform: scale(0.95); /* Efecto de presionado */
+}
+
+/* Colores específicos para cada botón */
+
+/* Botón Aumentar - Verde */
+button:nth-of-type(1) {
+    background-color: #28a745;
+    color: white;
+}
+
+button:nth-of-type(1):hover {
+    background-color: #218838;
+}
+
+/* Botón Disminuir - Naranja/Rojo suave */
+button:nth-of-type(2) {
+    background-color: #ffc107;
+    color: #333;
+}
+
+button:nth-of-type(2):hover {
+    background-color: #e0a800;
+}
+
+/* Botón Reiniciar - Rojo Alerta */
+button:nth-of-type(3) {
+    background-color: #dc3545;
+    color: white;
+}
+
+button:nth-of-type(3):hover {
+    background-color: #c82333;
+}
