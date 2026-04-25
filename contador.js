@@ -30,3 +30,40 @@ function reiniciar() {
 }
 
 
+
+function actualizarVista() {
+    const elemento = document.getElementById("numero");
+    elemento.innerHTML = cuenta;
+
+    // Efecto de color
+    if (cuenta < 0) {
+        elemento.style.color = "#ff4d4d"; 
+    } else if (cuenta > 0) {
+        elemento.style.color = "#2ecc71"; 
+    } else {
+        elemento.style.color = "#333";
+    }
+
+    // Animación de "pop"
+    elemento.style.transform = "scale(1.2)";
+    setTimeout(() => {
+        elemento.style.transform = "scale(1)";
+    }, 100);
+}
+
+function aumentar() {
+    cuenta++;
+    actualizarVista();
+}
+
+function disminuir() {
+    cuenta--;
+    actualizarVista();
+}
+
+function reiniciar() {
+    cuenta = 0;
+    actualizarVista();
+}
+
+
