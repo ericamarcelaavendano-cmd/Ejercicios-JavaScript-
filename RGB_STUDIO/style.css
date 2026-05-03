@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.fondo {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(23, 41, 56);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s;
+}
+
+.panel {
+  background: rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 16px;
+  padding: 30px;
+  width: 280px;
+}
+
+.grupo {
+  margin-bottom: 24px;    /* espacio entre cada grupo */
+}
+
+.grupo label {
+  display: block;          /* ocupa toda la línea */
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  text-align: center;      /* centrado */
+  margin-bottom: 10px;     /* espacio entre label y slider */
+  font-family: Arial, sans-serif;
+}
+
+.grupo input[type="range"] {
+  width: 100%;
+  display: block;          /* ocupa toda la línea */
+  margin: 0;
+}
+
+.grupo-num {
+  display: block;          /* ocupa toda la línea */
+  font-size: 13px;
+  text-align: center;      /* centrado */
+  color: rgba(255, 255, 255, 0.85);
+  margin-top: 8px;         /* espacio entre slider y número */
+  font-family: Arial, sans-serif;
+}
+
+.hex-row {
+  margin-top: 10px;
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  padding: 8px;
+  text-align: center;
+  font-family: monospace;
+  font-size: 18px;
+  color: white;
+  letter-spacing: 2px;
+}     

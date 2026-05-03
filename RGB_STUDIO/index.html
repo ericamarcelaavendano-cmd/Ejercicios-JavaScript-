@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RGB_Colores</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="fondo" id="fondo">
+
+    <div class="panel">
+
+      <div class="grupo">
+        <label for="rojo">Rojo (R)</label>
+        <input type="range" min="0" max="255" value="23" id="rojo">
+        <div class="grupo-num" id="nR">23</div>
+      </div>
+
+      <div class="grupo">
+        <label for="verde">Verde (G)</label>
+        <input type="range" min="0" max="255" value="41" id="verde">
+        <div class="grupo-num" id="nG">41</div>
+      </div>
+
+      <div class="grupo">
+        <label for="azul">Azul (B)</label>
+        <input type="range" min="0" max="255" value="56" id="azul">
+        <div class="grupo-num" id="nB">56</div>
+      </div>
+
+      <div class="hex-row" id="hexOut">#172938</div>
+
+    </div>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
