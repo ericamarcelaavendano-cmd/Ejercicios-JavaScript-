@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="check.png">
+  <title>To Do List</title>
+</head>
+<body>
+
+  <img class="logo" src="logoErica.jpg" alt="logo">
+  <h1>Mi lista de tareas</h1>
+
+  <form action="#" id="userInput">
+    <input type="text" placeholder="Escribe tu tarea aqui..." autofocus>
+    <input type="submit" value="+" id="addBtn">
+  </form>
+
+  <div id="List-container">
+    <div class="tash-container">
+      <input type="checkbox" onchange="toggleTarea(0)">
+      <label>Tarea de ejemplo</label>
+      <img src="image.png" class="closeBton" onclick="eliminarTarea(0)">
+    </div>
+  </div>
+
+  <div id="stats">Tareas Pendientes: 1 | Tareas Completadas: 0</div>
+
+  <script src="main.js"></script>
+</body>
+</html>
